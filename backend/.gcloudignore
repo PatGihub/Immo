@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But include what we need for the build
+!app/
+!main.py
+!requirements.txt
+!Dockerfile
+!.env.production
+!*.py
+!__pycache__/
