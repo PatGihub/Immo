@@ -1,0 +1,2484 @@
+2025-11-16 10:33:05 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:33:05 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:33:05 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:33:05 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:33:05 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:33:05 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:36:54 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:36:54 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:36:54 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:36:54 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:36:54 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:36:54 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:37:02 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:37:02 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:37:02 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:37:02 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:37:02 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:37:02 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:37:10 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:37:10 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:37:10 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:37:10 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:37:10 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:37:10 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:39:34 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:39:34 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:39:34 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:39:34 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:39:34 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:39:34 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:40:06 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:40:06 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:40:06 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:40:06 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:40:06 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:40:06 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 10:41:12 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:41:12 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:41:12 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:41:12 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:41:12 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:41:12 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:44:09 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:44:09 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:44:09 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:44:09 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:44:09 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:44:09 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 19, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:49:00 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:49:00 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:49:00 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:49:00 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 26, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:49:00 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 26, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:49:00 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 26, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:58:42 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:58:42 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:58:42 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:58:42 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 23, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:58:42 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 23, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:58:42 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 23, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:59:40 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:59:40 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:59:40 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 10:59:40 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 23, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:59:40 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 23, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 10:59:40 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 23, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 11:01:42 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 11:01:42 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 11:01:42 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 11:01:42 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 37, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 11:01:42 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 37, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 11:01:42 - auth - ERROR - Unexpected error during registration: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\routes\auth.py", line 37, in register
+    hashed_password=auth_service.hash_password(user_in.password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\app\services\auth.py", line 37, in hash_password
+    hashed = pwd_context.hash(password)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2163, in set_backend
+    return cls.set_backend(name, dryrun=dryrun)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2188, in set_backend
+    cls._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2311, in _set_backend
+    super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 2224, in _set_backend
+    ok = loader(**kwds)
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 626, in _load_backend_mixin
+    return mixin_cls._finalize_backend_mixin(name, dryrun)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 421, in _finalize_backend_mixin
+    if detect_wrap_bug(IDENT_2A):
+       ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 380, in detect_wrap_bug
+    if verify(secret, bug_hash):
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\utils\handlers.py", line 792, in verify
+    return consteq(self._calc_checksum(secret), chk)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 655, in _calc_checksum
+    hash = _bcrypt.hashpw(secret, config)
+ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-11-16 12:18:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:52 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:52 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:53 - auth - DEBUG - Password verification: failed
+2025-11-16 12:18:53 - auth - DEBUG - Password verification: failed
+2025-11-16 12:18:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:53 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:53 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:55 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:55 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:55 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:55 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:18:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:18:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:00 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:00 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:00 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:00 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:15 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:15 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:15 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:15 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:15 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:15 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:15 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:15 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:16 - auth - INFO - Register attempt for username: testuser, email: test1@example.com
+2025-11-16 12:19:16 - auth - INFO - Register attempt for username: testuser, email: test1@example.com
+2025-11-16 12:19:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:17 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:17 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: testuser, email: test2@example.com
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: testuser, email: test2@example.com
+2025-11-16 12:19:17 - auth - WARNING - Registration failed: Username or email already exists - testuser
+2025-11-16 12:19:17 - auth - WARNING - Registration failed: Username or email already exists - testuser
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: testuser1, email: test@example.com
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: testuser1, email: test@example.com
+2025-11-16 12:19:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:17 - auth - INFO - User registered successfully: testuser1 (id: 1)
+2025-11-16 12:19:17 - auth - INFO - User registered successfully: testuser1 (id: 1)
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: testuser2, email: test@example.com
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: testuser2, email: test@example.com
+2025-11-16 12:19:17 - auth - WARNING - Registration failed: Username or email already exists - testuser2
+2025-11-16 12:19:17 - auth - WARNING - Registration failed: Username or email already exists - testuser2
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:19:17 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:19:18 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:18 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:18 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:18 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:18 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:19:18 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:19:18 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:18 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:18 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:18 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:18 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:18 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:18 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:18 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:18 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:18 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:19 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:19 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:19 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:19 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:19 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:19 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:19 - auth - INFO - Login attempt for username: nonexistent
+2025-11-16 12:19:19 - auth - INFO - Login attempt for username: nonexistent
+2025-11-16 12:19:19 - auth - WARNING - Login failed: Invalid credentials for username: nonexistent
+2025-11-16 12:19:19 - auth - WARNING - Login failed: Invalid credentials for username: nonexistent
+2025-11-16 12:19:19 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:19 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:19 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:19 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:19 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:19 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:19 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:19 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:19 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:19 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:20 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:20 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:20 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:19:20 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:19:20 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:20 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:20 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:20 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:20 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:20 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:20 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:20 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:20 - auth - INFO - Login attempt for username: TESTUSER
+2025-11-16 12:19:20 - auth - INFO - Login attempt for username: TESTUSER
+2025-11-16 12:19:20 - auth - WARNING - Login failed: Invalid credentials for username: TESTUSER
+2025-11-16 12:19:20 - auth - WARNING - Login failed: Invalid credentials for username: TESTUSER
+2025-11-16 12:19:20 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:20 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:20 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:20 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:20 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:20 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:20 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:20 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:21 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:21 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:21 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:21 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:21 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:21 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:21 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:21 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:21 - auth - DEBUG - Token verified for user: testuser
+2025-11-16 12:19:21 - auth - DEBUG - Token verified for user: testuser
+2025-11-16 12:19:21 - auth - DEBUG - Fetching current user info: testuser
+2025-11-16 12:19:21 - auth - DEBUG - Fetching current user info: testuser
+2025-11-16 12:19:21 - auth - WARNING - Authorization header missing
+2025-11-16 12:19:21 - auth - WARNING - Authorization header missing
+2025-11-16 12:19:21 - auth - WARNING - Token verification failed: Not enough segments
+2025-11-16 12:19:21 - auth - WARNING - Token verification failed: Not enough segments
+2025-11-16 12:19:21 - auth - WARNING - Invalid or expired token
+2025-11-16 12:19:21 - auth - WARNING - Invalid or expired token
+2025-11-16 12:19:46 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:46 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:46 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:46 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:46 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:46 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:46 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:46 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:46 - auth - INFO - Register attempt for username: testuser, email: test1@example.com
+2025-11-16 12:19:46 - auth - INFO - Register attempt for username: testuser, email: test1@example.com
+2025-11-16 12:19:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:47 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:47 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: testuser, email: test2@example.com
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: testuser, email: test2@example.com
+2025-11-16 12:19:47 - auth - WARNING - Registration failed: Username or email already exists - testuser
+2025-11-16 12:19:47 - auth - WARNING - Registration failed: Username or email already exists - testuser
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: testuser1, email: test@example.com
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: testuser1, email: test@example.com
+2025-11-16 12:19:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:47 - auth - INFO - User registered successfully: testuser1 (id: 1)
+2025-11-16 12:19:47 - auth - INFO - User registered successfully: testuser1 (id: 1)
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: testuser2, email: test@example.com
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: testuser2, email: test@example.com
+2025-11-16 12:19:47 - auth - WARNING - Registration failed: Username or email already exists - testuser2
+2025-11-16 12:19:47 - auth - WARNING - Registration failed: Username or email already exists - testuser2
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:19:47 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:19:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:48 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:19:48 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:19:48 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:48 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:48 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:48 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:48 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:48 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:49 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:49 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:49 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:49 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:49 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:49 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:49 - auth - INFO - Login attempt for username: nonexistent
+2025-11-16 12:19:49 - auth - INFO - Login attempt for username: nonexistent
+2025-11-16 12:19:49 - auth - WARNING - Login failed: Invalid credentials for username: nonexistent
+2025-11-16 12:19:49 - auth - WARNING - Login failed: Invalid credentials for username: nonexistent
+2025-11-16 12:19:49 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:49 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:49 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:49 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:49 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:49 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:49 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:49 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:49 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:49 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:49 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:19:49 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:19:50 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:50 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:50 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:50 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:50 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:50 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:50 - auth - INFO - Login attempt for username: TESTUSER
+2025-11-16 12:19:50 - auth - INFO - Login attempt for username: TESTUSER
+2025-11-16 12:19:50 - auth - WARNING - Login failed: Invalid credentials for username: TESTUSER
+2025-11-16 12:19:50 - auth - WARNING - Login failed: Invalid credentials for username: TESTUSER
+2025-11-16 12:19:50 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:50 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:19:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:50 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:50 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:19:50 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:50 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:19:50 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:50 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:19:51 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:51 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:51 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:51 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:19:51 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:51 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:19:51 - auth - DEBUG - Token verified for user: testuser
+2025-11-16 12:19:51 - auth - DEBUG - Token verified for user: testuser
+2025-11-16 12:19:51 - auth - DEBUG - Fetching current user info: testuser
+2025-11-16 12:19:51 - auth - DEBUG - Fetching current user info: testuser
+2025-11-16 12:19:51 - auth - WARNING - Authorization header missing
+2025-11-16 12:19:51 - auth - WARNING - Authorization header missing
+2025-11-16 12:19:51 - auth - WARNING - Token verification failed: Not enough segments
+2025-11-16 12:19:51 - auth - WARNING - Token verification failed: Not enough segments
+2025-11-16 12:19:51 - auth - WARNING - Invalid or expired token
+2025-11-16 12:19:51 - auth - WARNING - Invalid or expired token
+2025-11-16 12:19:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:55 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:55 - auth - DEBUG - Password verification: failed
+2025-11-16 12:19:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:19:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:19:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:00 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:00 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:01 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:01 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:01 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:01 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:01 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:01 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:02 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:02 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:02 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:02 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:20:02 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:02 - auth - DEBUG - Password verification: success
+2025-11-16 12:20:03 - auth - DEBUG - Password verification: failed
+2025-11-16 12:20:03 - auth - DEBUG - Password verification: failed
+2025-11-16 12:23:15 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:15 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:15 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:15 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:23:15 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:23:15 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:23:15 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:23:15 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:23:15 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:23:15 - auth - INFO - User registered successfully: Patrick (id: 1)
+2025-11-16 12:23:15 - auth - INFO - User registered successfully: Patrick (id: 1)
+2025-11-16 12:23:15 - auth - INFO - User registered successfully: Patrick (id: 1)
+2025-11-16 12:23:28 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:28 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:28 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:28 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:28 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:28 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:42 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:42 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:42 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:42 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:42 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:23:42 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:35:23 - auth - INFO - Register attempt for username: Pat, email: zopatrick@gmail.com
+2025-11-16 12:35:23 - auth - INFO - Register attempt for username: Pat, email: zopatrick@gmail.com
+2025-11-16 12:35:23 - auth - INFO - Register attempt for username: Pat, email: zopatrick@gmail.com
+2025-11-16 12:35:23 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:35:23 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:35:23 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:35:23 - auth - INFO - Password change recorded for user_id 2: registration
+2025-11-16 12:35:23 - auth - INFO - Password change recorded for user_id 2: registration
+2025-11-16 12:35:23 - auth - INFO - Password change recorded for user_id 2: registration
+2025-11-16 12:35:23 - auth - INFO - User registered successfully: Pat (id: 2)
+2025-11-16 12:35:23 - auth - INFO - User registered successfully: Pat (id: 2)
+2025-11-16 12:35:23 - auth - INFO - User registered successfully: Pat (id: 2)
+2025-11-16 12:35:35 - auth - INFO - Login attempt for username: zopatrick@gmail.com
+2025-11-16 12:35:35 - auth - INFO - Login attempt for username: zopatrick@gmail.com
+2025-11-16 12:35:35 - auth - INFO - Login attempt for username: zopatrick@gmail.com
+2025-11-16 12:35:35 - auth - WARNING - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 12:35:35 - auth - WARNING - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 12:35:35 - auth - WARNING - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:44 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:44 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:44 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:44 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:44 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:44 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser, email: test1@example.com
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser, email: test1@example.com
+2025-11-16 12:39:44 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:44 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:44 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:44 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:44 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:44 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser, email: test2@example.com
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser, email: test2@example.com
+2025-11-16 12:39:44 - auth - WARNING - Registration failed: Username or email already exists - testuser
+2025-11-16 12:39:44 - auth - WARNING - Registration failed: Username or email already exists - testuser
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser1, email: test@example.com
+2025-11-16 12:39:44 - auth - INFO - Register attempt for username: testuser1, email: test@example.com
+2025-11-16 12:39:45 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:45 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:45 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:45 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:45 - auth - INFO - User registered successfully: testuser1 (id: 1)
+2025-11-16 12:39:45 - auth - INFO - User registered successfully: testuser1 (id: 1)
+2025-11-16 12:39:45 - auth - INFO - Register attempt for username: testuser2, email: test@example.com
+2025-11-16 12:39:45 - auth - INFO - Register attempt for username: testuser2, email: test@example.com
+2025-11-16 12:39:45 - auth - WARNING - Registration failed: Username or email already exists - testuser2
+2025-11-16 12:39:45 - auth - WARNING - Registration failed: Username or email already exists - testuser2
+2025-11-16 12:39:45 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:39:45 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:39:45 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:45 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:45 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:45 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:45 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:39:45 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:39:45 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:45 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:46 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:46 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:46 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:46 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:46 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:46 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:46 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:39:46 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:39:46 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:46 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:46 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:39:46 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:39:46 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:39:46 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:39:46 - auth - INFO - Login attempt for username: nonexistent
+2025-11-16 12:39:46 - auth - INFO - Login attempt for username: nonexistent
+2025-11-16 12:39:46 - auth - WARNING - Login failed: Invalid credentials for username: nonexistent
+2025-11-16 12:39:46 - auth - WARNING - Login failed: Invalid credentials for username: nonexistent
+2025-11-16 12:39:46 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:46 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:47 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:47 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:47 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:39:47 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:39:47 - auth - DEBUG - Password verification: failed
+2025-11-16 12:39:47 - auth - DEBUG - Password verification: failed
+2025-11-16 12:39:47 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:39:47 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:39:47 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:47 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:47 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:47 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:47 - auth - INFO - Login attempt for username: TESTUSER
+2025-11-16 12:39:47 - auth - INFO - Login attempt for username: TESTUSER
+2025-11-16 12:39:47 - auth - WARNING - Login failed: Invalid credentials for username: TESTUSER
+2025-11-16 12:39:47 - auth - WARNING - Login failed: Invalid credentials for username: TESTUSER
+2025-11-16 12:39:48 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:48 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:39:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:39:48 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:48 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:39:48 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:39:48 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:39:48 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:48 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:48 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:39:48 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:39:48 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:39:48 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:39:48 - auth - DEBUG - Token verified for user: testuser
+2025-11-16 12:39:48 - auth - DEBUG - Token verified for user: testuser
+2025-11-16 12:39:48 - auth - DEBUG - Fetching current user info: testuser
+2025-11-16 12:39:48 - auth - DEBUG - Fetching current user info: testuser
+2025-11-16 12:39:48 - auth - WARNING - Authorization header missing
+2025-11-16 12:39:48 - auth - WARNING - Authorization header missing
+2025-11-16 12:39:48 - auth - WARNING - Token verification failed: Not enough segments
+2025-11-16 12:39:48 - auth - WARNING - Token verification failed: Not enough segments
+2025-11-16 12:39:48 - auth - WARNING - Invalid or expired token
+2025-11-16 12:39:48 - auth - WARNING - Invalid or expired token
+2025-11-16 12:39:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:52 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:52 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:52 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:52 - auth - DEBUG - Password verification: failed
+2025-11-16 12:39:52 - auth - DEBUG - Password verification: failed
+2025-11-16 12:39:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:53 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:53 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:53 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:54 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:54 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:55 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:55 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:55 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:56 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:56 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:57 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:57 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:58 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:58 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:59 - auth - DEBUG - Password verification: success
+2025-11-16 12:39:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:39:59 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:40:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:40:00 - auth - DEBUG - Password verification: success
+2025-11-16 12:40:00 - auth - DEBUG - Password verification: failed
+2025-11-16 12:40:00 - auth - DEBUG - Password verification: failed
+2025-11-16 12:45:48 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:45:48 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:45:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:45:48 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:45:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:45:48 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:45:48 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:45:48 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:45:48 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:45:48 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:45:49 - auth - DEBUG - Password verification: success
+2025-11-16 12:45:49 - auth - DEBUG - Password verification: success
+2025-11-16 12:45:49 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:45:49 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:45:49 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:45:49 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:45:49 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:45:49 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:45:49 - auth - DEBUG - Password verification: failed
+2025-11-16 12:45:49 - auth - DEBUG - Password verification: failed
+2025-11-16 12:45:49 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:45:49 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:45:49 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:45:49 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:45:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:45:50 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:45:50 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:45:50 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:45:50 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:45:50 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:45:50 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 12:45:50 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 12:45:50 - auth - DEBUG - Password verification: success
+2025-11-16 12:45:50 - auth - DEBUG - Password verification: success
+2025-11-16 12:45:50 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 12:45:50 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 12:45:50 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 12:45:50 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 12:49:45 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:49:45 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:49:46 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:49:46 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:49:46 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:49:46 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:49:46 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:49:46 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:49:46 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:49:46 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:49:46 - auth - DEBUG - Password verification: success
+2025-11-16 12:49:46 - auth - DEBUG - Password verification: success
+2025-11-16 12:49:46 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:49:46 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:49:46 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:49:46 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:49:46 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:49:46 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:49:47 - auth - DEBUG - Password verification: failed
+2025-11-16 12:49:47 - auth - DEBUG - Password verification: failed
+2025-11-16 12:49:47 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:49:47 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:49:47 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:49:47 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:49:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:49:47 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:49:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:49:47 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:49:47 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:49:47 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:49:47 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 12:49:47 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 12:49:47 - auth - DEBUG - Password verification: success
+2025-11-16 12:49:47 - auth - DEBUG - Password verification: success
+2025-11-16 12:49:47 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 12:49:47 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 12:49:47 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 12:49:47 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 12:51:46 - auth - INFO - Login attempt for username: zopatrick@gmail.com
+2025-11-16 12:51:46 - auth - INFO - Login attempt for username: zopatrick@gmail.com
+2025-11-16 12:51:46 - auth - INFO - Login attempt for username: zopatrick@gmail.com
+2025-11-16 12:51:46 - auth - WARNING - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 12:51:46 - auth - WARNING - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 12:51:46 - auth - WARNING - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 12:52:17 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:52:17 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:52:17 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:52:17 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:52:17 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:52:17 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 12:56:26 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:56:26 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:56:27 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:56:27 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:56:27 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:56:27 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:56:27 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:56:27 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:56:27 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:27 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:27 - auth - DEBUG - Password verification: success
+2025-11-16 12:56:27 - auth - DEBUG - Password verification: success
+2025-11-16 12:56:27 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:56:27 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:56:27 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:56:27 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:56:27 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:27 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:27 - auth - DEBUG - Password verification: failed
+2025-11-16 12:56:27 - auth - DEBUG - Password verification: failed
+2025-11-16 12:56:27 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:56:27 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:56:39 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:56:39 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 12:56:39 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:56:39 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:56:39 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:56:39 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:56:39 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:56:39 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 12:56:39 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:39 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:40 - auth - DEBUG - Password verification: success
+2025-11-16 12:56:40 - auth - DEBUG - Password verification: success
+2025-11-16 12:56:40 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:56:40 - auth - INFO - JWT token created for user: testuser
+2025-11-16 12:56:40 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:56:40 - auth - INFO - User logged in successfully: testuser
+2025-11-16 12:56:40 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:40 - auth - INFO - Login attempt for username: testuser
+2025-11-16 12:56:40 - auth - DEBUG - Password verification: failed
+2025-11-16 12:56:40 - auth - DEBUG - Password verification: failed
+2025-11-16 12:56:40 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:56:40 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 12:56:40 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:56:40 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 12:56:40 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:56:40 - auth - DEBUG - Password hashed successfully
+2025-11-16 12:56:40 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:56:40 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 12:56:40 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:56:40 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 12:56:40 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 12:56:40 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 12:56:41 - auth - DEBUG - Password verification: success
+2025-11-16 12:56:41 - auth - DEBUG - Password verification: success
+2025-11-16 12:56:41 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 12:56:41 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 12:56:41 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 12:56:41 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:02:03 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 13:02:03 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 13:02:03 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:02:03 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:02:04 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:02:04 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:02:04 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 13:02:04 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 13:02:04 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:02:04 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:02:04 - auth - DEBUG - Password verification: success
+2025-11-16 13:02:04 - auth - DEBUG - Password verification: success
+2025-11-16 13:02:04 - auth - INFO - JWT token created for user: testuser
+2025-11-16 13:02:04 - auth - INFO - JWT token created for user: testuser
+2025-11-16 13:02:04 - auth - INFO - User logged in successfully: testuser
+2025-11-16 13:02:04 - auth - INFO - User logged in successfully: testuser
+2025-11-16 13:02:04 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:02:04 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:02:04 - auth - DEBUG - Password verification: failed
+2025-11-16 13:02:04 - auth - DEBUG - Password verification: failed
+2025-11-16 13:02:04 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 13:02:04 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 13:02:04 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 13:02:04 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 13:02:05 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:02:05 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:02:05 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:02:05 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:02:05 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 13:02:05 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 13:02:05 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 13:02:05 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 13:02:05 - auth - DEBUG - Password verification: success
+2025-11-16 13:02:05 - auth - DEBUG - Password verification: success
+2025-11-16 13:02:05 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 13:02:05 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 13:02:05 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:02:05 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:03:17 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 13:03:17 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 13:03:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:03:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:03:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:03:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:03:17 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 13:03:17 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 13:03:17 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:03:17 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:03:18 - auth - DEBUG - Password verification: success
+2025-11-16 13:03:18 - auth - DEBUG - Password verification: success
+2025-11-16 13:03:18 - auth - INFO - JWT token created for user: testuser
+2025-11-16 13:03:18 - auth - INFO - JWT token created for user: testuser
+2025-11-16 13:03:18 - auth - INFO - User logged in successfully: testuser
+2025-11-16 13:03:18 - auth - INFO - User logged in successfully: testuser
+2025-11-16 13:03:18 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:03:18 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:03:18 - auth - DEBUG - Password verification: failed
+2025-11-16 13:03:18 - auth - DEBUG - Password verification: failed
+2025-11-16 13:03:18 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 13:03:18 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 13:03:18 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 13:03:18 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 13:03:18 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:03:18 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:03:18 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:03:18 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:03:18 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 13:03:18 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 13:03:18 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 13:03:18 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 13:03:19 - auth - DEBUG - Password verification: success
+2025-11-16 13:03:19 - auth - DEBUG - Password verification: success
+2025-11-16 13:03:19 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 13:03:19 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 13:03:19 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:03:19 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:11:49 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 13:11:49 - auth - INFO - Register attempt for username: testuser, email: test@example.com
+2025-11-16 13:11:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:11:49 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:11:49 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:11:49 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:11:49 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 13:11:49 - auth - INFO - User registered successfully: testuser (id: 1)
+2025-11-16 13:11:49 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:11:49 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:11:50 - auth - DEBUG - Password verification: success
+2025-11-16 13:11:50 - auth - DEBUG - Password verification: success
+2025-11-16 13:11:50 - auth - INFO - JWT token created for user: testuser
+2025-11-16 13:11:50 - auth - INFO - JWT token created for user: testuser
+2025-11-16 13:11:50 - auth - INFO - User logged in successfully: testuser
+2025-11-16 13:11:50 - auth - INFO - User logged in successfully: testuser
+2025-11-16 13:11:50 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:11:50 - auth - INFO - Login attempt for username: testuser
+2025-11-16 13:11:50 - auth - DEBUG - Password verification: failed
+2025-11-16 13:11:50 - auth - DEBUG - Password verification: failed
+2025-11-16 13:11:50 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 13:11:50 - auth - WARNING - Login failed: Invalid credentials for username: testuser
+2025-11-16 13:11:50 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 13:11:50 - auth - INFO - Register attempt for username: immobilier_user, email: immobilier@test.com
+2025-11-16 13:11:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:11:51 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:11:51 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:11:51 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:11:51 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 13:11:51 - auth - INFO - User registered successfully: immobilier_user (id: 1)
+2025-11-16 13:11:51 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 13:11:51 - auth - INFO - Login attempt for username: immobilier_user
+2025-11-16 13:11:51 - auth - DEBUG - Password verification: success
+2025-11-16 13:11:51 - auth - DEBUG - Password verification: success
+2025-11-16 13:11:51 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 13:11:51 - auth - INFO - JWT token created for user: immobilier_user
+2025-11-16 13:11:51 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:11:51 - auth - INFO - User logged in successfully: immobilier_user
+2025-11-16 13:13:17 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:17 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:17 - auth - INFO - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:13:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:13:17 - auth - DEBUG - Password hashed successfully
+2025-11-16 13:13:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:13:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:13:17 - auth - INFO - Password change recorded for user_id 1: registration
+2025-11-16 13:13:17 - auth - INFO - User registered successfully: Patrick (id: 1)
+2025-11-16 13:13:17 - auth - INFO - User registered successfully: Patrick (id: 1)
+2025-11-16 13:13:17 - auth - INFO - User registered successfully: Patrick (id: 1)
+2025-11-16 13:13:29 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:29 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:29 - auth - INFO - Login attempt for username: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:29 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:29 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 13:13:29 - auth - WARNING - Login failed: Invalid credentials for username: patrick.ramontalambo@gmail.com
+2025-11-16 13:33:54 - auth - INFO - [auth.py:20] - Register attempt for username: testuser_fail, email: test_fail@example.com
+2025-11-16 13:33:54 - auth - INFO - [auth.py:20] - Register attempt for username: testuser_fail, email: test_fail@example.com
+2025-11-16 13:33:55 - auth - DEBUG - [auth.py:40] - Password hashed successfully
+2025-11-16 13:33:55 - auth - DEBUG - [auth.py:40] - Password hashed successfully
+2025-11-16 13:33:55 - auth - INFO - [password.py:33] - Password change recorded for user_id 1: registration
+2025-11-16 13:33:55 - auth - INFO - [password.py:33] - Password change recorded for user_id 1: registration
+2025-11-16 13:33:55 - auth - INFO - [auth.py:55] - User registered successfully: testuser_fail (id: 1)
+2025-11-16 13:33:55 - auth - INFO - [auth.py:55] - User registered successfully: testuser_fail (id: 1)
+2025-11-16 13:33:55 - auth - INFO - [auth.py:74] - Login attempt for username: testuser_fail
+2025-11-16 13:33:55 - auth - INFO - [auth.py:74] - Login attempt for username: testuser_fail
+2025-11-16 13:33:55 - auth - DEBUG - [auth.py:57] - Password verification: failed - hash mismatch
+2025-11-16 13:33:55 - auth - DEBUG - [auth.py:57] - Password verification: failed - hash mismatch
+2025-11-16 13:33:55 - auth - WARNING - [auth.py:80] - Login failed: Invalid credentials for username: testuser_fail
+2025-11-16 13:33:55 - auth - WARNING - [auth.py:80] - Login failed: Invalid credentials for username: testuser_fail
+2025-11-16 13:37:09 - auth - INFO - [auth.py:20] - Register attempt for username: testuser_fail, email: test_fail@example.com
+2025-11-16 13:37:09 - auth - INFO - [auth.py:20] - Register attempt for username: testuser_fail, email: test_fail@example.com
+2025-11-16 13:37:10 - auth - DEBUG - [auth.py:41] - Password hashed successfully
+2025-11-16 13:37:10 - auth - DEBUG - [auth.py:41] - Password hashed successfully
+2025-11-16 13:37:10 - auth - INFO - [password.py:33] - Password change recorded for user_id 1: registration
+2025-11-16 13:37:10 - auth - INFO - [password.py:33] - Password change recorded for user_id 1: registration
+2025-11-16 13:37:10 - auth - INFO - [auth.py:55] - User registered successfully: testuser_fail (id: 1)
+2025-11-16 13:37:10 - auth - INFO - [auth.py:55] - User registered successfully: testuser_fail (id: 1)
+2025-11-16 13:37:10 - auth - INFO - [auth.py:84] - Login attempt for username: testuser_fail
+2025-11-16 13:37:10 - auth - INFO - [auth.py:84] - Login attempt for username: testuser_fail
+2025-11-16 13:37:10 - auth - DEBUG - [auth.py:67] - Password verification: failed - hash mismatch
+2025-11-16 13:37:10 - auth - DEBUG - [auth.py:67] - Password verification: failed - hash mismatch
+2025-11-16 13:37:10 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: testuser_fail
+2025-11-16 13:37:10 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: testuser_fail
+2025-11-16 13:42:43 - auth - INFO - [test_real_exceptions.py:101] - Appelant level_1
+2025-11-16 13:42:43 - auth - INFO - [test_real_exceptions.py:101] - Appelant level_1
+2025-11-16 13:42:43 - auth - DEBUG - [test_real_exceptions.py:97] - [Level 1] Appelant level_2
+2025-11-16 13:42:43 - auth - DEBUG - [test_real_exceptions.py:97] - [Level 1] Appelant level_2
+2025-11-16 13:42:43 - auth - DEBUG - [test_real_exceptions.py:93] -  [Level 2] Appelant level_3
+2025-11-16 13:42:43 - auth - DEBUG - [test_real_exceptions.py:93] -  [Level 2] Appelant level_3
+2025-11-16 13:42:43 - auth - DEBUG - [test_real_exceptions.py:89] -   [Level 3] Appel à une fonction inexistante
+2025-11-16 13:42:43 - auth - DEBUG - [test_real_exceptions.py:89] -   [Level 3] Appel à une fonction inexistante
+2025-11-16 13:42:43 - auth - ERROR - [test_real_exceptions.py:105] - NameError capturée: name 'undefined_function' is not defined
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 102, in test_nested_exception
+    level_1()
+    ~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 98, in level_1
+    return level_2()
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 94, in level_2
+    return level_3()
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 90, in level_3
+    return undefined_function()  # NameError
+           ^^^^^^^^^^^^^^^^^^
+NameError: name 'undefined_function' is not defined
+2025-11-16 13:42:43 - auth - ERROR - [test_real_exceptions.py:105] - NameError capturée: name 'undefined_function' is not defined
+Traceback (most recent call last):
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 102, in test_nested_exception
+    level_1()
+    ~~~~~~~^^
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 98, in level_1
+    return level_2()
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 94, in level_2
+    return level_3()
+  File "C:\02_Data\01_Learning\Project\Immobilier\backend\tests\test_real_exceptions.py", line 90, in level_3
+    return undefined_function()  # NameError
+           ^^^^^^^^^^^^^^^^^^
+NameError: name 'undefined_function' is not defined
+2025-11-16 13:45:41 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: zopatrick@gmail.com
+2025-11-16 13:45:41 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: zopatrick@gmail.com
+2025-11-16 13:45:41 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: zopatrick@gmail.com
+2025-11-16 13:45:41 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:45:41 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:45:41 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:46:13 - auth - INFO - [auth.py:84] - Login attempt for username: zopatrick@gmail.com
+2025-11-16 13:46:13 - auth - INFO - [auth.py:84] - Login attempt for username: zopatrick@gmail.com
+2025-11-16 13:46:13 - auth - INFO - [auth.py:84] - Login attempt for username: zopatrick@gmail.com
+2025-11-16 13:46:13 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 13:46:13 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 13:46:13 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: zopatrick@gmail.com
+2025-11-16 13:48:12 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 13:48:12 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 13:48:12 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@gmail.com
+2025-11-16 13:48:12 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:12 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:12 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:26 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:26 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:26 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:26 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:26 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:26 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:32 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:32 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:32 - auth - INFO - [auth.py:20] - Register attempt for username: Patrick, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:32 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:32 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:32 - auth - WARNING - [auth.py:28] - Registration failed: Username or email already exists - Patrick
+2025-11-16 13:48:40 - auth - INFO - [auth.py:20] - Register attempt for username: Patricktest, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:40 - auth - INFO - [auth.py:20] - Register attempt for username: Patricktest, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:40 - auth - INFO - [auth.py:20] - Register attempt for username: Patricktest, email: patrick.ramontalambo@test.com
+2025-11-16 13:48:41 - auth - DEBUG - [auth.py:41] - Password hashed successfully
+2025-11-16 13:48:41 - auth - DEBUG - [auth.py:41] - Password hashed successfully
+2025-11-16 13:48:41 - auth - DEBUG - [auth.py:41] - Password hashed successfully
+2025-11-16 13:48:41 - auth - INFO - [password.py:33] - Password change recorded for user_id 2: registration
+2025-11-16 13:48:41 - auth - INFO - [password.py:33] - Password change recorded for user_id 2: registration
+2025-11-16 13:48:41 - auth - INFO - [password.py:33] - Password change recorded for user_id 2: registration
+2025-11-16 13:48:41 - auth - INFO - [auth.py:55] - User registered successfully: Patricktest (id: 2)
+2025-11-16 13:48:41 - auth - INFO - [auth.py:55] - User registered successfully: Patricktest (id: 2)
+2025-11-16 13:48:41 - auth - INFO - [auth.py:55] - User registered successfully: Patricktest (id: 2)
+2025-11-16 13:49:12 - auth - INFO - [auth.py:84] - Login attempt for username: patrick.ramontalambo@test.com
+2025-11-16 13:49:12 - auth - INFO - [auth.py:84] - Login attempt for username: patrick.ramontalambo@test.com
+2025-11-16 13:49:12 - auth - INFO - [auth.py:84] - Login attempt for username: patrick.ramontalambo@test.com
+2025-11-16 13:49:12 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: patrick.ramontalambo@test.com
+2025-11-16 13:49:12 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: patrick.ramontalambo@test.com
+2025-11-16 13:49:12 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: patrick.ramontalambo@test.com
+2025-11-16 13:49:28 - auth - INFO - [auth.py:84] - Login attempt for username: patricktest
+2025-11-16 13:49:28 - auth - INFO - [auth.py:84] - Login attempt for username: patricktest
+2025-11-16 13:49:28 - auth - INFO - [auth.py:84] - Login attempt for username: patricktest
+2025-11-16 13:49:28 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: patricktest
+2025-11-16 13:49:28 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: patricktest
+2025-11-16 13:49:28 - auth - WARNING - [auth.py:90] - Login failed: Invalid credentials for username: patricktest
+2025-11-16 13:51:01 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:51:01 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:51:01 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:51:02 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:51:02 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:51:02 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:51:02 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:51:02 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:51:02 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:51:02 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:51:02 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:51:02 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:58:37 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:58:37 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:58:37 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:58:37 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:58:37 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 13:59:44 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:59:44 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:59:44 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 13:59:44 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 13:59:44 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 14:02:28 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 14:02:28 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 14:02:28 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 14:02:28 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 14:02:28 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
