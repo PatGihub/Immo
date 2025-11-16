@@ -18,8 +18,9 @@ COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/pytho
 # Copy application code
 COPY . .
 
-# Copy .env.production and rename to .env for load_dotenv() to find it
-COPY .env.production .env || true
+# Copy .env.production as .env (for load_dotenv to find it)
+# Using shell form to handle missing file gracefully
+RUN if [ -f .env.production ]; then cp .env.production .env; fi
 
 # Create logs directory
 RUN mkdir -p logs
