@@ -8528,3 +8528,472 @@ NameError: name 'undefined_function' is not defined
 2025-11-16 14:07:06 - root - INFO - [main.py:64] - All routers included
 2025-11-16 14:07:06 - root - INFO - [main.py:64] - All routers included
 2025-11-16 14:07:06 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:03 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:03 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:03 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:03 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:03 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:03 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:03 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:03 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:03 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:03 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:03 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:03 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:05 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:05 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:05 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:05 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:05 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:05 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:05 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:05 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:05 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 15:27:05 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 15:27:05 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:05 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:05 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:27:05 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:27:05 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:05 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:05 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:27:05 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:05 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:05 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:27:05 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:05 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:27:05 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 15:28:17 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 15:28:17 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:28:17 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:28:17 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:28:17 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:28:17 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:28:17 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:28:18 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:28:18 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:28:18 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:28:18 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:28:18 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:28:18 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:28:18 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:28:18 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:28:18 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:28:18 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:28:18 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:28:18 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:32:21 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:32:21 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:32:21 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:32:21 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:32:21 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:32:21 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:32:21 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:32:21 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:32:21 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:32:21 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:32:21 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:32:21 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:32:21 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:32:21 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:32:21 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:35:09 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:09 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:09 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:09 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:09 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:09 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:09 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:09 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:09 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:09 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:09 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:09 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:11 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:11 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:11 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:11 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:11 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:11 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:11 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:11 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:11 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 15:35:11 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 15:35:11 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:11 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:11 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:35:11 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:35:11 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:11 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:11 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:35:11 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:11 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:11 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:35:11 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:11 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:11 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:35:51 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:35:51 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:35:51 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:35:51 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:35:51 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:35:51 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:35:51 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 15:35:51 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:35:51 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:35:51 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 15:35:51 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:35:51 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 15:35:51 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.379s
+2025-11-16 15:35:51 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.379s
+2025-11-16 15:35:51 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.379s
+2025-11-16 15:55:17 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:17 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:17 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:17 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:17 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:17 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:17 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:17 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:17 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:17 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:17 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:55:17 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:55:19 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:19 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:19 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:19 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:19 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:19 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:19 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:55:19 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:55:19 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 15:55:19 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 15:55:19 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:19 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:19 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 15:55:19 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 15:55:19 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:19 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:19 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 15:55:19 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:19 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:19 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 15:55:19 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:55:19 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:55:19 - root - INFO - [main.py:64] - All routers included
+2025-11-16 15:59:48 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:48 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:48 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:48 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 15:59:48 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 15:59:48 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 15:59:48 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:48 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:48 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:59 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:59 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:59 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:59 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 15:59:59 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 15:59:59 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 15:59:59 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:59 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:59 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:00:22 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:22 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:22 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:22 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:22 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:22 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:22 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:22 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:22 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:22 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:22 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:22 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:24 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:24 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:24 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:24 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:24 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:24 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:24 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:24 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:24 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:00:24 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:00:24 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:24 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:24 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:00:24 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:00:24 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:24 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:24 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:00:24 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:24 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:24 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-16 16:00:24 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:24 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:24 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:00:41 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:00:41 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:00:41 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:00:41 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:00:41 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:00:41 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:00:41 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:00:41 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:00:41 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:07:22 - watchfiles.main - DEBUG - [main.py:306] - 1 change detected: {(<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\config.py')}
+2025-11-16 16:07:22 - watchfiles.main - DEBUG - [main.py:306] - 1 change detected: {(<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\config.py')}
+2025-11-16 16:07:25 - watchfiles.main - DEBUG - [main.py:306] - 5 changes detected: {(<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2341858586048'), (<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2341858586048'), (<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__')}
+2025-11-16 16:07:25 - watchfiles.main - DEBUG - [main.py:306] - 5 changes detected: {(<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2341858586048'), (<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2341858586048'), (<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__')}
+2025-11-16 16:07:26 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:07:26 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:07:26 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:07:26 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:07:26 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:07:26 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:07:26 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:07:26 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:07:26 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:07:26 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:07:26 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:07:26 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:07:26 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:07:26 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:07:26 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:07:26 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:07:26 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:07:26 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:07:26 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:07:26 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:07:26 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:07:26 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:07:26 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:07:49 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:07:49 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:07:49 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:07:49 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 16:07:49 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 16:07:49 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 16:07:49 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:07:49 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:07:49 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:08:16 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:16 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:16 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:16 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:16 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:16 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:16 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:16 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:16 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:16 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:16 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:16 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:18 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:18 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:18 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:18 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:18 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:18 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:18 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:18 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:18 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:08:18 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:08:18 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:18 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:18 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:08:18 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:08:18 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:18 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:18 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:08:18 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:18 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:18 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:*']
+2025-11-16 16:08:18 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:18 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:18 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:08:33 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:08:33 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:08:33 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:08:33 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:08:33 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:08:33 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:08:33 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:08:33 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:08:33 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:09:19 - watchfiles.main - DEBUG - [main.py:306] - 1 change detected: {(<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\config.py')}
+2025-11-16 16:09:19 - watchfiles.main - DEBUG - [main.py:306] - 1 change detected: {(<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\config.py')}
+2025-11-16 16:09:22 - watchfiles.main - DEBUG - [main.py:306] - 5 changes detected: {(<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2187918192064'), (<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2187918192064')}
+2025-11-16 16:09:22 - watchfiles.main - DEBUG - [main.py:306] - 5 changes detected: {(<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2187918192064'), (<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.2187918192064')}
+2025-11-16 16:09:22 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:09:22 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:09:22 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:09:22 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:09:22 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:09:22 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:09:22 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:09:22 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:09:22 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:09:22 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:09:22 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:09:22 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:09:23 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:09:23 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:09:23 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:09:23 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:09:23 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:09:23 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:09:23 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:09:23 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:09:23 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:09:23 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:09:23 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:09:23 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:09:23 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:09:23 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:09:23 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:09:23 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:09:23 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:09:23 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:09:23 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:09:23 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 16:09:34 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 16:09:34 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 16:09:34 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 16:09:34 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 16:09:34 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 16:09:34 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 16:09:34 - auth - INFO - [auth.py:84] - Login attempt for username: Patricktest
+2025-11-16 16:09:35 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 16:09:35 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 16:09:35 - auth - DEBUG - [auth.py:65] - Password verification: success
+2025-11-16 16:09:35 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 16:09:35 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 16:09:35 - auth - INFO - [auth.py:88] - JWT token created for user: Patricktest
+2025-11-16 16:09:35 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 16:09:35 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 16:09:35 - auth - INFO - [auth.py:104] - User logged in successfully: Patricktest
+2025-11-16 16:09:35 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.374s
+2025-11-16 16:09:35 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.374s
+2025-11-16 16:09:35 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.374s
+2025-11-16 16:11:56 - watchfiles.main - DEBUG - [main.py:306] - 1 change detected: {(<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\config.py')}
+2025-11-16 16:11:56 - watchfiles.main - DEBUG - [main.py:306] - 1 change detected: {(<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\config.py')}
+2025-11-16 16:11:58 - watchfiles.main - DEBUG - [main.py:306] - 5 changes detected: {(<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.1928136043968'), (<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.1928136043968'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc')}
+2025-11-16 16:11:58 - watchfiles.main - DEBUG - [main.py:306] - 5 changes detected: {(<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.1928136043968'), (<Change.deleted: 3>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc'), (<Change.modified: 2>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc.1928136043968'), (<Change.added: 1>, 'C:\\02_Data\\01_Learning\\Project\\Immobilier\\backend\\app\\__pycache__\\config.cpython-313.pyc')}
+2025-11-16 16:11:59 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:11:59 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:11:59 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:11:59 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:11:59 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:11:59 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:11:59 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:11:59 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:11:59 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:11:59 - asyncio - DEBUG - [selector_events.py:64] - Using selector: SelectSelector
+2025-11-16 16:11:59 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:14] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:11:59 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:11:59 - root - INFO - [main.py:15] - Starting Immobilier API
+2025-11-16 16:11:59 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:16] - ==================================================
+2025-11-16 16:11:59 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:11:59 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:11:59 - root - INFO - [main.py:20] - Database tables created/verified
+2025-11-16 16:11:59 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:11:59 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:11:59 - root - INFO - [main.py:63] - CORS allowed origins: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8000', 'http://127.0.0.1:3000', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:8000']
+2025-11-16 16:11:59 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:11:59 - root - INFO - [main.py:64] - All routers included
+2025-11-16 16:11:59 - root - INFO - [main.py:64] - All routers included

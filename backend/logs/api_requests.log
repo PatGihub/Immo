@@ -1217,3 +1217,96 @@ TypeError: Object of type ValueError is not JSON serializable
 2025-11-16 14:04:02 - api - WARNING - [middleware.py:58] - [N/A] Error response body: {"detail":"Not Found"}
 2025-11-16 14:04:02 - api - WARNING - [middleware.py:58] - [N/A] Error response body: {"detail":"Not Found"}
 2025-11-16 14:04:02 - api - WARNING - [middleware.py:58] - [N/A] Error response body: {"detail":"Not Found"}
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 15:28:17 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 15:28:17 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:28:17 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:28:17 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:28:17 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:28:18 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:28:18 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:28:18 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:32:21 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:32:21 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:32:21 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:32:21 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:32:21 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:32:21 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:32:21 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:32:21 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:32:21 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.378s
+2025-11-16 15:35:51 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:35:51 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:35:51 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 15:35:51 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:35:51 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:35:51 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 15:35:51 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.379s
+2025-11-16 15:35:51 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.379s
+2025-11-16 15:35:51 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.379s
+2025-11-16 15:59:48 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:48 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:48 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:48 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 15:59:48 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 15:59:48 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 15:59:48 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:48 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:48 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:59 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:59 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:59 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 15:59:59 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 15:59:59 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 15:59:59 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 15:59:59 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:59 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 15:59:59 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:00:41 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:00:41 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:00:41 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:00:41 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:00:41 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:00:41 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:00:41 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:00:41 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:00:41 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:07:49 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:07:49 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:07:49 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:07:49 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 16:07:49 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 16:07:49 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.000s
+2025-11-16 16:07:49 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:07:49 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:07:49 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:08:33 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:08:33 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:08:33 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:08:33 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:08:33 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:08:33 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 400 - Duration: 0.001s
+2025-11-16 16:08:33 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:08:33 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:08:33 - api - WARNING - [middleware.py:58] - [N/A] Error response body: Disallowed CORS origin
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] OPTIONS /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 16:09:34 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 16:09:34 - api - INFO - [middleware.py:45] - [N/A] OPTIONS /api/auth/login - Status: 200 - Duration: 0.001s
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - INFO - [middleware.py:23] - [N/A] POST /api/auth/login from 127.0.0.1
+2025-11-16 16:09:34 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 16:09:34 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 16:09:34 - api - DEBUG - [middleware.py:32] - [N/A] Request body: {"username":"Patricktest","password":"immobilier@01"}
+2025-11-16 16:09:35 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.374s
+2025-11-16 16:09:35 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.374s
+2025-11-16 16:09:35 - api - INFO - [middleware.py:45] - [N/A] POST /api/auth/login - Status: 200 - Duration: 0.374s

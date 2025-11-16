@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from '@pages/Home'
 import Login from '@pages/Login'
+import ProfitabilitySimulator from '@pages/ProfitabilitySimulator'
 import './App.css'
 
 // Protected route component that checks token on every render
@@ -31,6 +32,10 @@ function App() {
         <Route 
           path="/" 
           element={<ProtectedRoute element={<Home />} />} 
+        />
+        <Route 
+          path="/simulator" 
+          element={<ProtectedRoute element={<ProfitabilitySimulator />} />} 
         />
       </Routes>
     </Router>
